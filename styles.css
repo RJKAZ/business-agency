@@ -326,6 +326,7 @@ html{
     height: 100%;
     object-fit: cover;
     opacity: 0.3;
+    transition: opacity 0.3s;
 }
 
 .controls {
@@ -333,6 +334,12 @@ html{
     position: absolute;
     bottom: 0;
     background-color: rgba(0,0,0,0.7);
+    transform: translateY(calc(100% - .4rem));
+    transition: transform 0.4s;
+}
+
+.video-wrapper:hover .controls {
+    transform:translateY(0)
 }
 
 .video-bar-wrapper {
@@ -346,8 +353,10 @@ html{
 
 .video-bar {
     height: 100%;
-    width: 0%;
+    width: 0;
     background-color: #d30819;
+    transition: width .2s linear;
+
 }
 
 .buttons {
