@@ -40,3 +40,20 @@ video.addEventListener('timeupdate', () =>{
     }
 
 })
+
+// Section 3 pricing 
+
+var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 70,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    }
+  });
+  
